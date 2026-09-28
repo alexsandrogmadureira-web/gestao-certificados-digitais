@@ -133,7 +133,7 @@ elif opcao_menu == "Novo Cadastro":
                 sessao.add(novo_colab)
                 sessao.commit()
 
-                data_expiracao = data_emissao + timedelta(days=1095)
+                data_expiracao = data_emissao + timedelta(days=730)
 
                 # Trata os dados de entrega baseados no checkbox e se a data foi preenchida
                 if entregue and data_entrega is not None:
